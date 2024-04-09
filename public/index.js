@@ -6,7 +6,7 @@ document.getElementById('search_form').addEventListener('submit', function(event
 
     const searchPromises = keywords.map(keyword => {
         // Update the query to exclude specific domains
-        const query = `${domain} ${keyword} -site:${domain} -site:wikipedia.org -site:facebook.com -site:instagram.com -site:reddit.com -site:quora.com -site:youtube.com -site:linkedin.com`;
+        const query = `${domain} ${keyword} -site:${domain} -site:wikipedia.org -site:facebook.com -site:instagram.com -site:reddit.com -site:quora.com -site:youtube.com -site:linkedin.com -site:tiktok.com -site:amazon.com -site:pinterest.com`;
         return fetch('/search', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
