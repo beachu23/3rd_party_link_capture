@@ -24,3 +24,12 @@ This project is designed to capture relevant third-party links from search engin
 2. **Dependencies**: Install necessary NPM packages:
    ```bash
    npm install express node-fetch
+
+### To Run
+1. Clone the repository
+2. Open the terminal and navigate to the local folder
+3. Run the following:
+   ```bash
+   node server.mjs
+4. Navigate to `localhost:8000` on any browser.
+
