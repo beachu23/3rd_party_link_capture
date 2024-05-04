@@ -2,8 +2,7 @@
 
 ## Overview
 
-This project is designed to capture relevant third-party links from search engine results based on specified keywords associated with a company name. It filters out links from certain undesirable domains (including the company's own domain) to focus on external perceptions and references. This tool can be particularly useful for market analysis, competitive research, or general company monitoring.
-
+This project is designed to capture relevant third-party links from search engine results based on specified keywords associated with a company name. It filters out links from certain domains (including the company's own domain) to narrow its search. This tool was designed for HSG interns to use to aid with third-party link capture.
 ## Features
 
 - **Keyword Searches**: Performs searches using predefined keywords related to sustainability aspects of a company.
