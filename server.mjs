@@ -9,9 +9,11 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.post('/search', async (req, res) => {
-    const query = req.body.query; 
+    const { query } = req.body;
     const subscriptionKey = 'f118f483930349cf9cdc7fefee61c900';
+
     const endpoint = `https://api.bing.microsoft.com/v7.0/search?q=${encodeURIComponent(query)}&count=${count}`;
+    
     try {
         const apiResponse = await fetch(endpoint, {
             method: 'GET',
@@ -28,7 +30,3 @@ app.post('/search', async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
-
-
-
-
